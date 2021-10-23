@@ -1,6 +1,18 @@
+:root
+{
+    --first:rgba(111, 0, 255, 0.733);
+    --second:rgba(196, 0, 235, 0.753);
+    --third:rgba(255, 0, 255, 0.699);
+
+    --fourth:rgba(226, 225, 225, 0.082);
+    --fifth:rgba(230, 228, 228, 0.39);
+
+}
+
 
 body
 {
+    background-image: linear-gradient(to right,var(--first),var(--third),var(--first));
     width: 100vw;
     height:100%;
     display: flex;
@@ -23,10 +35,12 @@ body
 {
     background-image: url('18.jpg ' );
     background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     color:white;
     /* border: 1px solid black; */
-    width: 99vw;
-    height:100vh;
+    width: 99%;
+    height:50vh;
     font-size:50px;
     display: flex;
     flex-direction: column;
@@ -36,7 +50,14 @@ body
 
 .about
 {
+     /* position: absolute; */
+ 
     /* border: 1px solid black; */
+    background-image: linear-gradient(to bottom right,var(--fourth),var(--fifth));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    filter:drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.397));
+    -webkit-backdrop-filter: blur(5px);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,6 +67,8 @@ body
     height: auto;
     padding: 2% 0% 2% 0%;
 }
+
+
 
  .about img
 {
@@ -76,14 +99,18 @@ a:hover
 
 .educ
 {
-    color: rgb(0, 26, 36);
+    background-image: linear-gradient(to bottom right,var(--fourth),var(--fifth));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    filter:drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.397));
+    -webkit-backdrop-filter: blur(5px);
+    color: rgb(255, 255, 255);
     margin-top: 5%;
     width: 75%;
     height: auto;
     font-size: 20px;
     padding-left: 5%;
     padding-bottom: 2%;
-    background-color: rgb(2, 240, 129);
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 20px;
 }
@@ -92,8 +119,8 @@ a:hover
 {
     margin-top: 3%;
     width: 89%;
-    background-color: rgb(255, 218, 11);
-    border: 1px solid rgba(0, 0, 0, 0);
+    /* background-color: rgb(255, 218, 11); */
+    border: 1px solid rgb(255, 255, 255);
     padding-left: 3%;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 1px rgba(213, 4, 255, 0.411) inset;
@@ -119,7 +146,7 @@ text-align: center;
 
 .info h2
 {
-    color: rgb(135, 1, 212);
+    color: rgb(255, 255, 255);
 }
 
 .info1
@@ -209,7 +236,11 @@ grid-template-columns:auto auto auto;
 .work
 {
     border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow:0px 0px 5px 1px grey;
+    background-image: linear-gradient(to bottom right,var(--fourth),var(--fifth));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    filter:drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.397));
+    -webkit-backdrop-filter: blur(5px);
     width:auto;
     height:290px;
     overflow: hidden;
@@ -218,6 +249,11 @@ grid-template-columns:auto auto auto;
     align-items: center;
     justify-content:space-around;
     margin-left: 5%;
+}
+
+a
+{
+color:rgb(255, 255, 255);
 }
 
 .work img
